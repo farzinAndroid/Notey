@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">نوتی</string>
+
+    <string name="my_notes">یادداشت های من</string>
+    <string name="search_here">جست‌وجو</string>
+    <string name="clear">پاک کردن</string>
+    <string name="no_data">یادداشتی وجود ندارد</string>
+    <string name="add_note">نوشتن</string>
+    <string name="choose_color">انتخاب رنگ</string>
+    <string name="some_text">به سادگی متن ساختگی است
+        صنعت چاپ و حروفچینی لورم ایپسوم بوده است
+        متن ساختگی استاندارد صنعت از دهه 1500،
+        هنگامی که یک چاپگر ناشناس یک گالی از نوع تایپ را گرفت و درهم ریخت
+        آن را برای ساخت یک کتاب نمونه نوع. این نه تنها پنج جان سالم به در برده است
+        قرن ها، بلکه جهشی به حروفچینی الکترونیکی،
+        اساساً بدون تغییر باقی می ماند.
+    </string>
+    <string name="edited_on">ویرایش شده در</string>
+    <string name="note_title">عنوان یادداشت</string>
+    <string name="note_content">متن یادداشت</string>
+    <string name="undo">برگرد</string>
+    <string name="note_deleted">یادداشت حذف شد</string>
+    <string name="farsi">فارسی</string>
+    <string name="english">انگلیسی</string>
+    <string name="confirm">تایید</string>
+    <string name="note_shouldnt_be_empty">یادداشت نباید خالی باشد</string>
+
+
+</resources>

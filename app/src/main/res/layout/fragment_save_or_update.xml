@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/note_content_frag_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.SaveOrUpdateFragment">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar_frag_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/ic_round_arrow_back_24" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/last_edited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/date_rounded"
+                android:ellipsize="end"
+                android:padding="4dp"
+                android:paddingStart="12dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="4dp"
+                android:text="@string/edited_on"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/google_sans_regular" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/save_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingBottom="4dp"
+                android:src="@drawable/ic_baseline_save_24"
+                app:tint="@color/black" />
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_bar"
+            android:layout_below="@+id/toolbar_frag_note_content">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="@string/note_title"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:padding="8dp"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textSize="22sp" />
+
+
+                    <com.yahiaangelo.markdownedittext.MarkdownEditText
+                        android:id="@+id/et_note_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="22dp"
+                        android:background="@null"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:hint="@string/note_content"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:padding="8dp"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_color_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                app:backgroundTint="@color/purple" />
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.yahiaangelo.markdownedittext.MarkdownStylesBar
+                android:id="@+id/style_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:elevation="4dp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
