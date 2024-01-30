@@ -1,6 +1,5 @@
 # Notey
 Simple Notes app with #XML #Kotlin #Hilt #Datastore #Livedata #Coroutines
-You can download this app from bazar.
 
 This app has full support of Persian and English language.
 
