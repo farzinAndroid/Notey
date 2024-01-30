@@ -4,6 +4,9 @@ You can download this app from bazar.
 
 This app has full support of Persian and English language.
 
+you can download this app from Cafe Bazar
+http://cafebazaar.ir/app/?id=com.farzin.notey&ref=share
+
 
 ![photo_8_2023-12-25_13-39-52](https://github.com/farzinAndroid/Notey/assets/124037241/054e074b-7b00-4050-9df1-fa03dfd18cc3)
 
